@@ -1,0 +1,31 @@
+#! /bin/sh
+
+if [ $# -ne 1 ]
+then
+    echo "Expecting a single argument which is either Start or stop\n"
+    exit 1
+fi
+
+case "$1" in
+    start)
+        echo "Start Loading scull driver"
+        scull_load
+        echo "Start Loading misc-module/faulity driver"
+        module_load faulty
+        echo "Start Loading misc-module/hello driver"
+        modprobe hello
+    ;;
+    stop)
+        echo "Start Unloading scull driver"
+        scull_unload
+        echo "Start Unloading misc-module/faulity driver"
+        module_unload faulty
+        echo "Start Unloading misc-module/hello driver"
+        rmmod hello
+    ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+
+exit 0
