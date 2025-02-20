@@ -1,0 +1,5 @@
+
+config BR2_AESD_CHAR_DEV
+	bool "aesd-char-dev"
+	help
+	  Includes aesd character device package
