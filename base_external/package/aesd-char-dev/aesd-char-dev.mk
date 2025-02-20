@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-AESD_CHAR_DEV_VERSION = 'cb8df6b54fd96f01c81310c420a1cae7cfd15eba'
+AESD_CHAR_DEV_VERSION = 'a7029850bb867117f637c8afeb4fb60b0e8d01a1'
 AESD_CHAR_DEV_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-khaled34.git'
 AESD_CHAR_DEV_SITE_METHOD = git
 AESD_CHAR_DEV_GIT_SUBMODULES = YES
